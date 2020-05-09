@@ -1,0 +1,2 @@
+*.txt -crlf
+*.txt text eol=lf 
