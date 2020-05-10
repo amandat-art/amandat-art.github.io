@@ -1,3 +1,5 @@
 module.exports = function(eleventyConfig) {
-  return require('./.config')(eleventyConfig);
+  return {
+    pathPrefix: '/porfolio/',
+  };
 };
