@@ -3,9 +3,9 @@
 {%- for post in collections.post limit:6 -%}
     <article class="style{{ forloop.index }}">
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/pic01.jpg" alt="" />
+			<img src="{{ images/pic01.jpg | url }}" alt="" />
         </span>
-        <a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
+        <a href="{{ post.url | url }}">
             {%- if post.data.title -%}
                 <h2>{{ post.data.title }}</h2>
             {%- endif -%}

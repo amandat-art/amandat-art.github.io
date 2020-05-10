@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({'node_modules/font-awesome/fonts': 'assets/fonts'});
 
   return {
+    pathPrefix: "/portfolio/",
     dir: {
       input: 'src/content',
       output: 'dist',

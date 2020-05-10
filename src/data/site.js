@@ -4,8 +4,6 @@ module.exports = function() {
     title: 'amandat.art',
     email: 'amanda@thomason.email',
     description: 'Work in progress',
-    baseurl: '',
-    url: 'https://amandat-art.github.io', // temporary url
 
     // Logo settings
     'logo-image-url': 'assets/images/logo.svg',
