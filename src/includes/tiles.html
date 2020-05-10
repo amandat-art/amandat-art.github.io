@@ -3,20 +3,17 @@
 {% comment %} eleventy auto sorts by date {% endcomment %}
 {% assign featured = collections.post limit:12 %}
 {%- for post in featured -%}
-    <article class="style{{ forloop.index }}">
-		<span class="image">
-			<img src="{{ '/assets/images/pic' | append: forloop.index | append: '.jpg' | url }}" alt="" />
+    <article class="{{ 'style' | append: forloop.index }}">
+        <span class="image">
+            <a
+                href="{{ '/assets/images/pic' | append: forloop.index | append: '.jpg' | url }}"
+                data-lightbox="portfolio"
+                data-title="{{ post.data.title }}"
+                data-alt="{{ post.data.title }}"
+            >
+                <img src="{{ '/assets/images/pic' | append: forloop.index | append: '.jpg' | url }}" alt="{{ post.data.title }}" />
+            </a>
         </span>
-        <a href="{{ post.url | url }}">
-            {%- if post.data.title -%}
-                <h2>{{ post.data.title }}</h2>
-            {%- endif -%}
-            {%- if post.data.excerpt -%}
-                <div class="content">
-                    <p>{{ post.data.excerpt }}</p>
-                </div>
-            {%- endif -%}
-		</a>
     </article>
 {%- endfor -%}
 
