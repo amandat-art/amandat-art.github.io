@@ -6,7 +6,7 @@ module.exports = function() {
     description: 'Work in progress',
 
     // Logo settings
-    'logo-image-url': 'assets/images/logo.svg',
+    'logo-image-url': '/assets/images/logo.svg',
     'font-awesome-icon-logo': null,
 
     // Social accounts
