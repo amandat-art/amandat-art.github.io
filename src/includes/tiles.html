@@ -3,7 +3,7 @@
 {%- for post in collections.post limit:6 -%}
     <article class="style{{ forloop.index }}">
 		<span class="image">
-			<img src="{{ 'assets/images/pic' | append: forloop.index | append: '.jpg' | url }}" alt="" />
+			<img src="{{ '/assets/images/pic' | append: forloop.index | append: '.jpg' | url }}" alt="" />
         </span>
         <a href="{{ post.url | url }}">
             {%- if post.data.title -%}
