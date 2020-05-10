@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <h1>{{ title }}</h1> {% if featured-image %}
+    <span class="image main">
+      <img src="{{ featured-image }}" alt="">
+    </span> {% endif %} {{ content }} {% include footer.html %}
+
+
+</body>
+
+</html>
