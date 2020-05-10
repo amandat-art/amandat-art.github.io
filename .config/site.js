@@ -1,5 +1,5 @@
 module.exports = function(eleventyConfig) {
   return {
-    pathPrefix: '/porfolio/',
+    pathPrefix: '/portfolio/',
   };
 };
