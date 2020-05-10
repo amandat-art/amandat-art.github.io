@@ -1,6 +1,8 @@
 <section class="tiles">
 
-{%- for post in collections.post limit:6 -%}
+{% comment %} eleventy auto sorts by date {% endcomment %}
+{% assign featured = collections.post limit:12 %}
+{%- for post in featured -%}
     <article class="style{{ forloop.index }}">
 		<span class="image">
 			<img src="{{ '/assets/images/pic' | append: forloop.index | append: '.jpg' | url }}" alt="" />
