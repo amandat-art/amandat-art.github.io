@@ -30,5 +30,11 @@ fields:
     display_utc: false
     export_format: '"YYYY-MM-DD\TTTHH:mm:ss.uZZ"'
   label: Date
+- name: collection
+  type: text
+  config:
+    required: false
+  label: Collection
+  description: The group of images this image belongs to (if any)
 pages:
 - src/content/portfolio/2016-07-27-welcome-to-eleventy.md
