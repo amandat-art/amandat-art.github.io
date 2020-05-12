@@ -13,6 +13,8 @@ sections:
   create: documents
   match: "*.md"
   new_doc_ext: md
+  templates:
+  - featured-image
 upload_dir: src/images
 public_path: "/portfolio/assets/images"
 front_matter_path: "/assets/images"
