@@ -30,3 +30,5 @@ fields:
     display_utc: false
     export_format: '"YYYY-MM-DD\TTTHH:mm:ss.uZZ"'
   label: Date
+pages:
+- src/content/portfolio/2016-07-27-welcome-to-eleventy.md
