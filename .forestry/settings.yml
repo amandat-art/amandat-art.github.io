@@ -9,12 +9,10 @@ sections:
 - type: document
   path: src/content/index.html
   label: Home
-- type: directory
-  path: src/data
+- type: document
+  path: src/data/site.json
   label: Configuration
-  create: all
-  match: "*"
-  new_doc_ext: js
+  match: "**/*"
 - type: heading
   label: Portfolio
 - type: directory
@@ -28,7 +26,6 @@ sections:
 - type: document
   path: src/content/portfolio/portfolio.11tydata.json
   label: Configuration
-  match: "**/*"
 - type: heading
   label: code
 - type: directory
