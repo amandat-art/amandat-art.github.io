@@ -1,0 +1,43 @@
+---
+label: Configuration
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: email
+  label: email
+- type: text
+  name: description
+  label: description
+- type: file
+  name: logo-image-url
+  label: logo-image-url
+- type: text
+  name: font-awesome-icon-logo
+  label: font-awesome-icon-logo
+- type: text
+  name: github_username
+  label: github_username
+- type: text
+  name: twitter_username
+  label: twitter_username
+- type: text
+  name: facebook_url
+  label: facebook_url
+- type: text
+  name: instagram_username
+  label: instagram_username
+- type: text
+  name: dribble_username
+  label: dribble_username
+- type: text
+  name: 500px_username
+  label: 500px_username
+- type: text
+  name: phone
+  label: phone
+- type: boolean
+  name: home-link-in-menu
+  label: home-link-in-menu
