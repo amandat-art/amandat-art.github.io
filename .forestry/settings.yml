@@ -10,6 +10,14 @@ sections:
   path: src/content/index.html
   label: Home
 - type: directory
+  path: src/data
+  label: Configuration
+  create: all
+  match: "*"
+  new_doc_ext: js
+- type: heading
+  label: Portfolio
+- type: directory
   path: src/content/portfolio
   label: Featured images
   create: documents
@@ -17,12 +25,6 @@ sections:
   new_doc_ext: md
   templates:
   - featured-image
-- type: directory
-  path: src/data
-  label: Configuration
-  create: all
-  match: "*"
-  new_doc_ext: js
 - type: heading
   label: code
 - type: directory
