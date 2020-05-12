@@ -11,9 +11,9 @@ sections:
   match: "*.md"
   new_doc_ext: md
 upload_dir: src/images
-public_path: "/assets/images"
-front_matter_path: ''
-use_front_matter_path: false
+public_path: "/portfolio/assets/images"
+front_matter_path: "/assets/images"
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_output_directory: dist
