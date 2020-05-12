@@ -8,8 +8,8 @@ sections:
   path: src/content/portfolio
   label: Featured images
   create: documents
-  match: "**/*.md"
-  new_doc_ext: ".md"
+  match: "*.md"
+  new_doc_ext: md
 upload_dir: src/images
 public_path: "/portfolio/assets/images"
 front_matter_path: ''
