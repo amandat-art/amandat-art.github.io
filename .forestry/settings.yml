@@ -4,12 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: src/includes
-  label: Includes
-  create: all
-  match: "**/*"
-  new_doc_ext: html
 - type: document
   path: src/content/index.html
   label: Home
@@ -21,6 +15,18 @@ sections:
   new_doc_ext: md
   templates:
   - featured-image
+- type: document
+  path: src/data
+  label: Data
+  match: "**/*"
+- type: heading
+  label: Admin
+- type: directory
+  path: src/includes
+  label: Includes
+  create: all
+  match: "**/*"
+  new_doc_ext: html
 upload_dir: src/images
 public_path: "/portfolio/assets/images"
 front_matter_path: "/assets/images"
