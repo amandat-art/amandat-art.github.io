@@ -13,7 +13,7 @@ sections:
   path: src/content/portfolio
   label: Featured images
   create: documents
-  match: "**/*"
+  match: "**/*.md"
   new_doc_ext: md
   templates:
   - featured-image
