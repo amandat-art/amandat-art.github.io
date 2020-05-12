@@ -15,11 +15,14 @@ sections:
   new_doc_ext: md
   templates:
   - featured-image
+- type: directory
+  path: src/data
+  label: Configuration
+  create: all
+  match: "**/*"
+  new_doc_ext: ".js"
 - type: heading
   label: "$DEV"
-- type: document
-  path: src/data
-  label: Data
 - type: directory
   path: src/includes
   label: Includes
