@@ -14,13 +14,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({'node_modules/font-awesome/fonts/fontawesome-webfont.woff2': 'assets/fonts/fontawesome-webfont.woff2'});
   eleventyConfig.addPassthroughCopy({'node_modules/font-awesome/fonts/fontawesome-webfont.otf': 'assets/fonts/fontawesome-webfont.otf'});
 
-  // lightbox
-  eleventyConfig.addPassthroughCopy({'node_modules/lightbox2/dist/css/lightbox.min.css': 'assets/css/lightbox.min.css'});
-  eleventyConfig.addPassthroughCopy({'node_modules/lightbox2/dist/js/lightbox.min.js': 'assets/js/lightbox.min.js'});
-  eleventyConfig.addPassthroughCopy({'node_modules/lightbox2/dist/images/close.png': 'assets/images/close.png'});
-  eleventyConfig.addPassthroughCopy({'node_modules/lightbox2/dist/images/loading.gif': 'assets/images/loading.gif'});
-  eleventyConfig.addPassthroughCopy({'node_modules/lightbox2/dist/images/next.png': 'assets/images/next.png'});
-  eleventyConfig.addPassthroughCopy({'node_modules/lightbox2/dist/images/prev.png': 'assets/images/prev.png'});
+  // frescojs
+  eleventyConfig.addPassthroughCopy({'node_modules/@staaky/fresco/dist/css/fresco': 'assets/css/fresco'});
+  eleventyConfig.addPassthroughCopy({'node_modules/@staaky/fresco/dist/css/fresco.css': 'assets/css/fresco.css'});
+  eleventyConfig.addPassthroughCopy({'node_modules/@staaky/fresco/dist/js/fresco.min.js': 'assets/js/fresco.min.js'});
 
   return {};
 };

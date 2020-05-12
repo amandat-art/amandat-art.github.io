@@ -3,15 +3,16 @@
 {% comment %} eleventy auto sorts by date {% endcomment %}
 {% assign featured = collections.post limit:12 %}
 {%- for post in featured -%}
-    <article class="{{ 'style' | append: forloop.index }}">
+    {%- assign caption = post.templateContent | strip_html | strip_newlines | truncate: 160 -%}
+    <article>
         <span class="image">
             <a
-                href="{{ '/assets/images/pic' | append: forloop.index | append: '.jpg' | url }}"
-                data-lightbox="portfolio"
-                data-title="{{ post.data.title }}"
-                data-alt="{{ post.data.title }}"
+                href="{{ post.data.image | url }}"
+                class="fresco"
+                {%- if post.data.collection -%} data-fresco-group="{{ post.data.collection }}" {%- endif -%}
+                {%- if caption != '' -%} data-fresco-caption="{{ caption }}" {%- endif -%}
             >
-                <img src="{{ '/assets/images/pic' | append: forloop.index | append: '.jpg' | url }}" alt="{{ post.data.title }}" />
+                <img src="{{ post.data.image | url }}" alt="{{ post.data.title }}" />
             </a>
         </span>
     </article>

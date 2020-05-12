@@ -1,7 +1,6 @@
 ---
-layout: default
-title:  "Welcome to eleventy!"
+title:  "An image"
 date: "2016-07-16T12:00:00.0-04:00"
-categories: eleventy update
+image: "/assets/images/pic1.jpg"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+This is the caption
