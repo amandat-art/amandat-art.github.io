@@ -12,9 +12,6 @@ sections:
 - type: document
   path: src/data/site.json
   label: Configuration
-  match: "**/*"
-- type: heading
-  label: Portfolio
 - type: directory
   path: src/content/portfolio
   label: Featured images
@@ -23,9 +20,6 @@ sections:
   new_doc_ext: md
   templates:
   - featured-image
-- type: document
-  path: src/content/portfolio/portfolio.11tydata.json
-  label: Configuration
 - type: heading
   label: code
 - type: directory
@@ -34,6 +28,12 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: html
+- type: directory
+  path: src
+  label: 11ty Configuration
+  create: all
+  match: "**/*.11tydata.json"
+  new_doc_ext: ".11tydata.json"
 upload_dir: src/images
 public_path: "/portfolio/assets/images"
 front_matter_path: "/assets/images"
