@@ -25,6 +25,10 @@ sections:
   new_doc_ext: md
   templates:
   - featured-image
+- type: document
+  path: src/content/portfolio/portfolio.11tydata.json
+  label: Configuration
+  match: "**/*"
 - type: heading
   label: code
 - type: directory
