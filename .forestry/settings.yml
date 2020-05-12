@@ -19,7 +19,7 @@ sections:
   path: src/data
   label: Configuration
   create: all
-  match: "**/*"
+  match: "*"
   new_doc_ext: js
 - type: heading
   label: code
