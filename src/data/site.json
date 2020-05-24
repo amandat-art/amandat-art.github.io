@@ -1,6 +1,8 @@
 {
   "title": "amandat.art",
   "email": "amanda@thomason.email",
+  "featured_images": 15,
+  "caption_length": 160,
   "description": "Work in progress",
   "logo-image-url": "/assets/images/logo.svg",
   "font-awesome-icon-logo": "",

@@ -1,9 +1,9 @@
 <section class="tiles">
 
 {% comment %} eleventy auto sorts by date {% endcomment %}
-{% assign featured = collections.post limit:12 %}
+{% assign featured = collections.post limit:site.featured_images %}
 {%- for post in featured -%}
-    {%- assign caption = post.templateContent | strip_html | strip_newlines | truncate: 160 -%}
+    {%- assign caption = post.templateContent | strip_html | strip_newlines | truncate: site.caption_length -%}
     <article>
         <span class="image">
             <a
