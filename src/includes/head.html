@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{% if excerpt %}{{ excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="stylesheet" href="{{ '/assets/css/font-awesome.min.css' | url }}">
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
     <link rel="stylesheet" href="{{ '/assets/css/fresco.css' | url }}">
     {% if page.url %}<link rel="canonical" href="{{ page.url | remove: 'index.html' | url }}">{% endif %}

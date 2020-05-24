@@ -20,19 +20,11 @@
 		text-rendering: auto;
 		line-height: 1;
 		text-transform: none !important;
+		font-family: "FontAwesome";
 
-		@if ($category == brands) {
-			font-family: 'Font Awesome 5 Brands';
-		}
-		@elseif ($category == solid) {
-			font-family: 'Font Awesome 5 Free';
+		@if ($category != brands) {
 			font-weight: 900;
 		}
-		@else {
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
-
 	}
 
 }
