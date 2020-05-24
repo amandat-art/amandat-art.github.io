@@ -7,7 +7,6 @@
     "@11ty/eleventy": "^0.10.0",
     "@staaky/fresco": "^2.3.1",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "sass": "^1.26.5"
   }
